@@ -1,0 +1,316 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1270px)
+  #menu
+    .menu-item
+      a
+        font-size: 14px
+  .h1
+    font-size: 120px
+  #menu
+    margin-left: -11px
+    .menu-item
+      margin-left: 11px
+      a
+        &.active
+          &:before
+  .banner
+    .container
+      height: 600px
+    .phone
+    .contacts
+    a
+    .boucket
+      width: 500px
+      img
+      .advantages-text
+        font-size: 20px
+        &:nth-child(1)
+        &:nth-child(2)
+        &:nth-child(3)
+        &:nth-child(4)
+        &:nth-child(5)
+    .topper-wrapper
+      bottom: 60px
+      .topper
+  .swiper-container
+    .swiper-slide 
+      .slide-body 
+        .slide-text 
+          padding: 20px 20px
+  .img-container
+    width: 30% !important
+    margin-left: 10px !important
+    .lg-image
+      height: 140px !important
+    p
+      font-size: 10px !important
+  .step-order
+    margin: 0 !important
+    font-size: 120px !important
+  .order-body
+    .order-title
+      font-size: 12px
+    p
+      font-size: 10px
+  .order
+    margin-top: 30px !important
+  .ml-50
+    margin-left: 0 !important
+  .section-order .step3-imgs .img-thumb
+    width: 100%
+  .section-order .step3-imgs .img-container
+    margin-right: 10px
+  .form-group
+    .pretty
+      display: block !important
+      margin-bottom: 30px
+  .topper-wrapper-delevery
+    margin-left: 10px
+  .delivery-steps
+    background-size: 79% !important
+    background-position: 105px 62px !important
+  footer
+    .social-footer
+      font-size: 14px !important
+    .nav-footer
+      margin: 0px 30px
+      li
+        margin-bottom: 2px  
+      a
+        font-size: 14px !important               
+.popup
+  .mfp-close
+    right: 0
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .h1
+    font-size: 70px
+  .header
+    nav
+      display: none
+      overflow: hidden
+      position: absolute
+      left: 0
+      right: 0
+      background-color: $accent
+    #menu
+      .menu-item
+        text-align: center
+  #toggle-menu
+    display: block
+
+  .banner
+    .container
+      height: 830px
+    .phone
+    .contacts
+    a
+    .boucket
+      display: block
+      margin: 0 auto      
+      img
+      .advantages-text
+        &:nth-child(1)
+        &:nth-child(2)
+        &:nth-child(3)
+        &:nth-child(4)
+        &:nth-child(5)
+    .topper-wrapper
+      position: static
+      margin: 0 auto
+      .topper
+  .form-groups-wrapper
+    .text-accent
+      font-size: 13px !important
+    .amount
+      font-size: 20px !important
+  .delivery-steps
+    background-size: 79% !important
+    background-position: 79px 68px !important
+    p
+      font-size: 14px !important
+    .delivery-step-2
+      .step-index
+        margin-top: 20px !important
+    .delivery-step-4
+      .step-index
+        margin-top: 14px !important                
+
+
+  .section-calculator
+    .h1
+    & > .container
+      &:before
+    form
+      .form-groups-wrapper
+        .form-group
+        .total
+          b
+          .amount
+          .currency
+        .pretty
+        .range
+          width: 240px
+          > .irs
+            .irs-slider
+            .irs-bar
+              &:after
+            .irs-line
+              &:after
+        .p_weight
+        .input-number
+          input
+          &-increment, &-decrement
+          &-increment
+          &-decrement
+      .topper-wrapper
+        .topper
+          input,button, textarea
+            width: 220px
+
+  footer
+    .nav-footer
+      margin: 0
+      display: block
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .banner
+    .container
+      height: 700px
+    .phone
+    .contacts
+    .boucket
+      width: 395px 
+      img
+      .advantages-text
+        &:nth-child(1)
+        &:nth-child(2)
+        &:nth-child(3)
+        &:nth-child(4)
+        &:nth-child(5)
+    .topper-wrapper
+      .topper
+  .banner-top
+    padding: 15px 0
+  .section-order
+    display: none
+  .section-calculator
+    display: none
+  .delivery-steps
+    display: none
+    background-image: none !important
+    .delivery-step
+      display: table
+      margin-left: 0 !important
+      .step-index, p
+        display: table-cell
+        vertical-align: middle
+        text-align: left
+      .step-index
+        width: 70px
+  .order-delivery:after, .order-delivery:before
+    top: auto !important
+    left: auto !important
+    right: 0 !important
+    bottom: 0 !important
+  .nav-footer
+    text-align: right
+  .social-footer
+    margin-right: 0 !important
+  .social-footer>span:first-child
+    padding-right: 0 !important
+  footer
+    .pt-10
+      padding-top: 0 !important               
+
+@media only screen and (max-width : 640px)
+  .arrow-up
+    bottom: -85px
+  .banner
+    .container
+      height: 510px
+    .phone
+    .contacts
+    .boucket
+      display: none !important
+      img
+      .advantages-text
+        &:nth-child(1)
+        &:nth-child(2)
+        &:nth-child(3)
+        &:nth-child(4)
+        &:nth-child(5)
+    .topper-wrapper
+      margin-top: 40px
+@media only screen and (max-width : 576px)
+
+  .banner
+    .container
+    .phone
+    .contacts
+    .boucket
+      img
+      .advantages-text
+        &:nth-child(1)
+        &:nth-child(2)
+        &:nth-child(3)
+        &:nth-child(4)
+        &:nth-child(5)
+    .topper-wrapper
+      .topper
+  .h1
+    font-size: 55px
+  .phone
+    display: block
+    margin: 0
+    
+@media only screen and (max-width : 480px)
+  .h1
+    font-size: 50px
+    line-height: 50px
+  .h1:after
+    display: none
+  .banner
+    .topper-wrapper
+      width: 98%
+  .order-button
+    width: 150px
+    margin: 0 10px    
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+    nav
+      display: block !important
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1270px)
+  /**/

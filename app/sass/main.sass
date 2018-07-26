@@ -1,0 +1,1178 @@
+@import "_mixins/_utils"
+@import "vars"
+@import "fonts"
+@import "libs"
+
+.clearfix:after
+  content: ""
+  display: table
+  clear: both
+*
+  box-sizing: border-box
+
+.fa-fw
+  font-size: 30px
+  color: $accent
+
+html
+  font-size: 16px
+  color: #636363
+body
+  font-family: 'GothamPro'
+  overflow-x: hidden
+  min-width: 320px
+a
+  text-decoration: none
+h1,h2,h3
+  margin: 0
+input, button, textarea
+  padding: 11px
+  outline: none
+input[type="number"]
+  -moz-appearance: textfield
+  padding: 0 !important
+input, textarea
+  text-align: center
+  margin-top: 10px
+  border: 1px solid $accent
+  border-radius: 4px
+  background-color: transparent
+  +placeholder
+    color: $nine
+textarea
+  border-radius: 10px
+.disabled
+  opacity: 0.4
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+    -webkit-appearance: none
+    margin: 0
+.mfp-bg
+  opacity: 0.9
+.text-seconday
+  font-size: 14px
+  vertical-align: bottom
+  color: #939393
+.position-right
+  position: absolute
+  top: 50%
+  right: -101px  
+
+.range-min, .range-max
+  font-family: 'GothamProBold'
+
+.text-accent
+  color: $accent
+
+button
+  cursor: pointer
+
+.ml-50
+  margin-left: 50px
+.mb-25
+  margin-bottom: 25px  
+.mt-20
+  margin-top: 20px
+.mb-10
+  margin-bottom: 10px !important      
+
+.h1
+  color: #dfd6da
+  font-size: 180px
+  line-height: 180px
+  letter-spacing: 3px
+  font-family: 'Gabriola1'
+  position: relative
+  font-weight: normal
+  &:after
+    content: ""
+    position: absolute
+    right: 25px
+    top: 50%
+    width: 13.6%
+    height: 1px
+    background-color: #dfd6da
+.header
+  background-color: $accent
+  min-height: 60px
+  font-family: 'GothamPro'
+.bottom-delivery 
+  position: absolute
+  bottom: -125px
+  left: 50px
+  z-index: 1
+  display: flex
+  align-items: flex-end
+  justify-content: flex-end
+  width: 220px
+  height: 106px
+  background-repeat: no-repeat
+  background-image: url(img/mouse.png)
+  p
+    font-family: 'GothamPro'
+    font-size: 48px !important
+    color: $fourth
+    line-height: 1
+    letter-spacing: 4px
+    font-weight: bold  
+.pretty-border  
+  background-image: linear-gradient(to right, #af2260 40%, transparent 40%),/*
+  */linear-gradient(to right, #af2260 40%, transparent 40%),/*
+  */linear-gradient(to bottom, #af2260 40%, transparent 40%),/*
+  */linear-gradient(to bottom, #af2260 40%, transparent 40%)
+  background-position: left 6px top,left 6px bottom,left top 9px,right top 9px
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y
+  background-size: 14px 1px, 14px 1px, 1px 14px, 1px 14px
+.topper-wrapper
+  margin-top: auto
+  width: 100%
+  .topper
+    position: relative
+    background-size: 14px 1px, 14px 1px, 1px 14px, 1px 14px
+    padding: 27px 8px
+    text-align: center
+    position: relative
+    color: $accent
+    border-radius: 6px
+    p
+      margin-bottom: 30px
+      font-size: 20px
+    b, strong
+      font-size: 22px
+      text-transform: uppercase
+      letter-spacing: 2px
+    .btn-accent
+      position: absolute
+      bottom: 0%
+      right: 50%
+      transform: translateX(50%) translateY(50%)
+
+    textarea
+      height: 73px
+    input, button, textarea
+      width: 260px
+.topper-wrapper-delevery
+  width: 424px
+  margin-left: 45px
+  margin-top: 255px        
+nav
+  z-index: 2
+#menu
+  margin: 0
+  padding: 0
+  margin-left: -28px
+  .menu-item
+    list-style: none
+    margin-left: 28px
+    a
+      color: white
+      padding: 20px 0px
+      display: inline-block
+      position: relative
+      &.active
+        &::before
+          content: ""
+          position: absolute
+          top: 0
+          width: 100%
+          height: 4px
+          background-color: $third
+#toggle-menu
+  display: none
+
+.logo img
+  max-width: 100%
+  height: auto
+.section
+  margin: 30px 0px
+.banner
+  margin-top: 0px
+  background-image: url(img/banner-bg.png)
+  background-repeat: no-repeat
+  background-position: center
+  .container
+    height: 732px
+    position: relative
+  .phone
+    margin-right: 3%
+    a
+      color: black
+  .contacts
+    text-align: right
+    border-bottom: 1px solid $fourth
+    padding-bottom: 20px
+  a
+    margin-left: 10px
+  .boucket
+    display: inline-block
+    position: relative
+    width: 792px
+    margin-left: 135px
+    margin-top: -60px
+    img
+      width: 100%
+    .advantages-text
+      position: absolute
+      font-family: 'Gabriola1'
+      font-size: 25px
+      transform: translateX(50%)
+      white-space: nowrap
+      &:nth-child(1)
+        top: 11%
+        right: 18%
+      &:nth-child(2)
+        top: 32%
+        right: 1%
+      &:nth-child(3)
+        top: 63%
+        right: 88%
+      &:nth-child(4)
+        top: 42%
+        right: 100%
+      &:nth-child(5)
+        top: 14%
+        right: 92%
+  .topper-wrapper
+    width: 420px
+    height: 175px
+    position: absolute
+    bottom: 145px
+    right: 40px
+    .topper
+      color: $ten
+      padding-top: 23px
+      padding-bottom: 42px
+      background-position: left 6px top, left 4px bottom, left top -10px, right top 7px
+      strong
+        color: $accent
+      p
+        margin-bottom: 0
+      .topper-title
+        line-height: 25px
+        padding-bottom: 16px
+        position: relative
+        margin-bottom: 10px
+        &:after
+          content: ""
+          width: 169px
+          height: 1px
+          background-color: $accent
+          position: absolute
+          bottom: 0
+          right: 50%
+          transform: translateX(50%)
+      .topper-lead
+        font-size: 16px
+      .btn-accent
+        width: 177px
+      &:before
+        content: ""
+        width: 25px
+        height: 28px
+        background-image: url(img/fly.png)
+        display: inline-block
+        position: absolute
+        top: -20px
+        left: -17px
+        
+.shadow
+  box-shadow: 0px 0px 16.34px 2.66px rgba(0, 0, 0, 0.22)
+.lg-image
+  position: relative
+  .zoom
+    position: absolute
+    top: 50%
+    right: 50%
+    transform: translateX(50%) translateY(-50%)
+    background-image: url(img/zoom.png)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: contain
+    width: 48px
+    height: 48px
+    opacity: 0
+    transition: 0.2s
+  &:hover    
+    .zoom
+      opacity: 1
+
+.banner-top
+  padding: 20px 30px
+
+.phone i
+  color: $accent      
+
+
+.slider
+  position: relative
+  .button-next
+    position: absolute
+    right: -60px
+    top: 50%
+    z-index: 2
+    &.in
+      opacity: 0.5
+  .button-prev
+    position: absolute
+    left: -60px
+    top: 50%
+    z-index: 2
+    &.in
+      opacity: 0.5 
+.swiper-container
+  margin-top: 30px
+  .swiper-slide
+    padding: 10px
+    width: 393px
+    .slide-body
+      box-shadow: 0px 0px 0px 0px $second
+      transition: 0.2s
+      margin-bottom: 57px
+      margin-bottom: 
+      .slide-text
+        padding: 20px 47px
+      .index
+        font-size: 110px
+        font-family: 'Gabriola1'
+        line-height: 0.5
+        display: flex
+        position: relative
+        align-items: center
+        color: $second
+        transition: 0.2s
+        .num
+          padding-right: 20px
+        &:after
+          content: ""
+          height: 1px
+          width: 100%
+          display: inline-block
+          background-color: $fourth
+          right: 0
+      .product-price
+        margin-bottom: 20px
+        box-sizing: border-box
+      &:hover
+        box-shadow: 0px 0px 20px -1px $second
+        margin-bottom: 0
+        .index
+          color: $accent
+        .product-gallery
+          margin-right: -30px
+        .zoom
+          opacity: 1
+.product-title
+  font-size: 16px
+  font-weight: normal
+  margin-top: 30px
+  b
+    display: block
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing: 2px
+    color: #292522
+    font-family: 'GothamProBold'
+.product-price
+  .price-amount
+    color: $accent
+    font-size: 22px
+    font-weight: bold
+.product-description
+  position: relative
+  margin: 0
+  padding: 18px 0
+  min-height: 146px
+  &:before
+    position: absolute
+    content: ""
+    display: inline-block
+    height: 1px
+    width: 100px
+    background-color: $fourth
+    top: 0
+.product-gallery
+  margin-left: 30px
+  margin-right: 30px
+  transition: 0.2s
+  a
+    display: block
+  .product-image
+    background-size: cover
+    background-position: center
+    padding-top: 70%
+    .zoom
+      transform: none
+      top: 0
+      right: 0
+  .gallery-thumbs
+    display: flex
+    justify-content: space-between
+    .zoom
+      width: 35px
+      height: 35px
+    padding: 10px 10px
+    .thumb-container
+      width: 46%
+    .thumb
+      padding-top: 54%
+      background-color: $fourth
+      background-size: cover
+      background-position: center
+.controls
+  margin-top: 30px
+  text-align: center
+  button
+    vertical-align: middle
+.button-prev, .button-next
+  border: none
+  background-color: $sixth
+  cursor: pointer
+  width: 52px
+  height: 52px
+  position: relative
+.button-prev
+  .chevron
+    transform: rotate(225deg)
+
+.chevron
+  display: inline-block
+  width: 20px
+  height: 20px
+  border-top: 1px solid black
+  border-right: 1px solid black
+  border-width: 3px
+  border-color: $accent
+  transform: rotate(45deg)
+.btn-accent
+  background-color: $accent
+  color: white
+  border: none
+  padding: 11px
+  border-radius: 4px
+.order-button
+  width: 204px
+  margin: 0 45px
+
+.section-order
+  margin-top: 75px
+  .order
+    margin-top: 137px
+  .wrap-topper
+    display: flex
+    justify-content: flex-end
+    margin-top: 30px
+    margin-right: 45px
+    .topper
+      position: relative
+      margin-bottom: 52px
+      &:before
+        content: ""
+        display: inline-block
+        width: 82px
+        height: 144px
+        background-image: url(img/arrow.png)
+        background-repeat: no-repeat
+        pointer-events: none
+        background-position: center
+        position: absolute
+        left: -102px
+        bottom: -43px
+
+  .topper
+    width: 470px
+    height: 168px
+    text-align: center
+    background-size: 14px 1px, 14px 1px, 1px 14px, 1px 14px
+    display: flex
+    justify-content: center
+    align-items: center
+    p
+      margin: 0
+      font-size: 19px
+      text-transform: uppercase
+      letter-spacing: 3px
+      color: $fifth
+      font-weight: bold
+  .img-thumb
+    @extend .shadow
+    display: inline-block
+    width: 230px
+    height: 142px
+    background-size: cover
+    background-position: center
+
+  .step-order
+    font-family: 'GothamProMedium'
+    font-size: 200px
+    &:nth-child(odd)
+      margin-right: 10px
+      margin-left: 30px
+    &:nth-child(even)
+      margin-left: 10px
+      margin-right: 15px  
+    &:after
+      content: none
+  .order-body
+    display: inline-block
+    p
+      letter-spacing: 0.7px
+  .order-title
+    font-size: 18px
+    letter-spacing: 2px
+    font-weight: bold
+    text-transform: uppercase
+  .step-1
+    margin-top: 50px
+
+  .step1-imgs
+    .img-container
+      width: 197px
+      display: inline-block
+      margin-left: 25px
+      p
+        margin-top: 10px
+    p
+      text-align: center
+      font-size: 18px
+    .img
+      height: 207px
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      width: 100%
+      display: inline-block
+
+  .step-2-col
+    text-align: right
+  .step2-imgs
+    display: flex
+    justify-content: space-between
+    margin-top: 45px
+    padding: 0 30px
+    a
+      &:nth-child(1)
+        margin-top: 5px
+      &:nth-child(2)
+        margin-top: 20px
+      &:nth-child(3)
+        margin-top: 0px
+      &:nth-child(4)
+        margin-top: 22px
+  .step2-imgs
+    display: flex
+    justify-content: space-between
+    .img
+      width: 18%
+  .step-3-col
+    .step-order
+      margin-right: 20px
+  .step3-imgs
+    margin-top: 20px
+    padding: 0 40px
+    position: relative
+    &:before
+      background-image: url(img/bg1.png)
+      background-repeat: no-repeat
+      content: ""
+      display: inline-block
+      width: 205px
+      height: 249px
+      top: -35px
+      right: 65px
+      pointer-events: none
+      position: absolute
+    .img-container
+      width: 373px
+      display: inline-block
+      margin-right: 60px
+      vertical-align: top
+      p
+        font-size: 18px
+        margin-top: 10px
+      i
+        font-style: italic
+        font-size: 16px
+        color: #727272  
+    .img-thumb
+      height: 189px
+      width: 373px
+  .btn-bot  
+    margin-top: 10px
+    text-align: center
+    .btn-accent
+      width: 206px
+.btn-bot-recal      
+  position: relative
+  margin-top: 40px
+
+.pretty .state label:before, .pretty .state label:after
+  border: 1px solid #c89561
+  border-radius: 2px
+
+.pretty.p-image input:checked ~ .state label:after
+  background-color: #c89561
+
+.pretty.p-image .state img 
+    opacity: 0
+    position: absolute
+    width: initial
+    height: initial
+    top: -11px
+    left: 3px
+    z-index: 1
+    text-align: center
+    line-height: normal
+    -webkit-transform: none
+    -ms-transform: scale(0.8)
+    transform: none
+
+
+.section-calculator
+  .h1
+    z-index: 1
+    margin-bottom: -55px
+  & > .container
+    position: relative
+    &:before
+      content: ""
+      display: inline-block
+      width: 541px
+      height: 316px
+      background-image: url(img/bg2.png)
+      background-position: center
+      right: 0px
+      top: 70px
+      position: absolute
+  form
+    .pretty-first-group
+      padding-bottom: 45px !important
+    .pretty-second-group
+      padding-bottom: 40px !important
+      padding-top: 30px !important
+    .pretty-third-group
+      padding-bottom: 30px !important
+      .pretty
+        margin-bottom: 30px    
+    .form-groups-wrapper
+      margin-top: 40px
+      margin-left: 20px
+      font-size: 18px
+      .form-group
+        padding: 42px 13px
+        padding-right: 0px
+        background-image: linear-gradient(to right, $seventh 74%, transparent 74%)
+        background-position: left bottom
+        background-repeat: repeat-x
+        background-size: 42px 1px
+      label
+        margin-left: 10px  
+      .total
+        margin-top: 34px
+        padding-left: 18px
+        b
+          text-transform: uppercase
+          font-size: 18px
+          letter-spacing: 2px
+          margin-right: 15px
+        .amount
+          color: $accent
+          font-size: 24px
+        .currency
+          color: $eighth
+      .pretty:not(:last-child)
+        margin-right: 50px
+      .range        
+        width: 380px
+        display: inline-block
+        margin-right: 40px
+        position: relative
+        padding-bottom: 26px
+        vertical-align: middle
+        &-min, &-max
+          position: absolute
+          bottom: 0
+          font-size: 14px
+          color: $eleven          
+        &-min
+          left: -13px
+        &-max
+          right: -18px
+        > .irs
+          .irs-slider
+            top: 26px
+            width: 22px
+            height: 22px
+            margin-top: -5px
+            border: initial
+            background: $accent
+            cursor: pointer
+            transform: initial
+            border-radius: 4px
+          .irs-bar
+            height: 20px
+            background-color: transparent
+            &:after
+              content: ""
+              display: block
+              height: 2px
+              background-color: $accent
+          .irs-line
+            height: 20px
+            background-color: transparent
+            &:after
+              content: ""
+              display: block
+              height: 2px
+              background-color: $second
+      .to_selected
+        display: inline-block
+        vertical-align: middle
+      .p_weight
+        width: 88px
+        height: 39px
+        margin-right: 10px
+      .input-number
+        display: inline-block
+        padding-right: 20px
+        position: relative
+        input
+          height: 30px
+          width: 63px
+          text-align: center
+        &-increment, &-decrement
+          border: none
+          background-color: transparent
+          width: 0
+          height: 0
+          padding: 0
+          border: 6px solid transparent
+          position: absolute
+          right: 0
+        &-increment
+          top: 10px
+          border-bottom: 9px solid $accent
+        &-decrement
+          top: 28px
+          border-top: 9px solid $accent
+    .topper-wrapper
+      .topper
+        hr
+          margin-bottom: 17px
+          border: none
+          height: 1px
+          background-image: linear-gradient(to right, $seventh 80%, transparent 80%)
+          background-position: left bottom
+          background-repeat: repeat-x
+          background-size: 15px 1px
+.section-popular
+  .h1
+    margin-bottom: 20px
+  .popular-products
+    margin-top: -40px
+    > div
+      margin-top: 40px
+  .product-gallery
+    margin: 0
+  .product-image
+    padding-top: 113%
+  .gallery-thumbs
+    padding: 10px 0
+  .product-title 
+    margin-top: 5px
+    b
+      font-size: 16px
+  .product-price
+    padding-bottom: 15px
+  .product-description
+    padding: 10px 0
+    &:before
+      width: 60%
+  .btn-bot
+    margin-top: 32px
+    text-align: center
+    .btn-accent
+      width: 206px
+.btn-bot
+  .btn-accent
+    display: block
+    margin: 0 auto
+.section-delivery
+  margin: 45px auto
+  b
+    font-family: 'GothamProBold'
+    color: $accent
+  .h1
+    &:after
+      content: none
+  .delivery-text
+    text-align: center
+    color: $accent
+    font-size: 20px
+    margin-top: 25px
+    b
+      font-size: 22px
+  .delivery-steps
+    margin-top: 20px
+    margin-bottom: 40px
+    background-image: url(img/delivery.png)
+    background-repeat: no-repeat
+    background-position: 156px 50px
+    background-size: 
+    font-size: 18px
+    .delivery-step-2
+      margin-left: 40px
+      .step-index
+        margin-top: 30px
+    .delivery-step-3
+      margin-left: 20px
+    .delivery-step-4
+      .step-index
+        margin-top: 20px      
+    .delivery-step
+      text-align: center
+      .step-index
+        color: #c29b74
+        font-size: 100px
+        font-family: 'GothamProMedium'
+    p
+      line-height: 1.2
+  .order-delivery
+    position: relative
+    padding-top: 20px
+    min-height: 302px
+    text-align: center
+    background-image: linear-gradient(to right, $seventh 74%, transparent 74%)
+    background-position: left bottom
+    background-repeat: repeat-x
+    background-size: 42px 1px
+    .delivery-text
+      margin-bottom: 12px
+    .btn-accent
+      display: block
+      margin: 0 auto
+      width: 289px
+      position: relative
+      &:before
+        content: ""
+        width: 220px
+        height: 106px
+        background-image: url(img/mouse.png)
+        position: absolute
+        background-repeat: no-repeat
+        top: 40px
+        left: 70px
+        // pointer-events: none
+  .order-delivery:after, .order-delivery:before
+    position: absolute
+    content: ''
+    display: block  
+    background-image: url(img/bg3.png)
+    background-repeat: no-repeat
+    top: 0
+    width: 198px
+    height: 95px
+  .order-delivery:after
+    left: 0  
+  .order-delivery:before
+    right: 0
+  .order-descr
+    text-align: center
+    color: #7e7974
+    margin-top: 30px
+    font-size: 18px
+    b
+      font-size: 22px
+.section-experts
+  .btn-accent
+    padding-left: 45px
+    padding-right: 45px
+.experts-block
+  margin-left: 35px
+  h3
+    letter-spacing: 2px
+    margin-bottom: 35px
+    margin-top: 30px
+    position: relative
+    font-size: 19px
+    text-transform: uppercase
+    font-family: 'GothamProBold'
+    color: $fifth
+    font-weight: normal
+    &:after
+      content: ''
+      display: block  
+      position: absolute
+      bottom: -15px
+      left: 0
+      width: 170px
+      height: 1px
+      background-color: #cdcdcd  
+    span
+      color: #c29b74
+  .border-bottom
+    background-image: linear-gradient(to right, $seventh 50%, transparent 50%)
+    background-position: left bottom
+    background-repeat: repeat-x
+    background-size: 9px 1px       
+  p
+    padding-bottom: 37px
+    font-size: 18px
+    line-height: 22px
+    color: #737373
+    b
+      color: $accent
+.bg-bottom
+  width: 100%
+  height: 190px
+  background-image: url(img/bg4.png)
+  background-repeat: no-repeat
+  background-size: cover
+
+footer
+  img
+    max-width: 100%
+    height: auto
+  .social
+    margin-left: 10px
+  .border-bottom:after
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 330px
+    height: 1px  
+    background-color: #dcaa76
+  .social-link
+    padding-left: 10px   
+  .mr-65
+    margin-right: 65px
+    margin-left: 50px   
+  padding-top: 40px
+  min-height: 200px
+  background-color: #be8c57
+  .nav-footer
+    display: inline-block
+    vertical-align: top
+    list-style: none
+    padding-left: 0
+    margin-top: 30px
+    li
+      line-height: 16px
+    a
+      color: white
+      font-size: 16px
+      line-height: 19px
+  .social-footer
+    position: relative
+    color: white
+    font-size: 16px
+    text-align: right
+    padding: 10px 0
+    padding-top: 4px
+    margin-right: 32px
+    a
+      color: white
+    .fas
+      color: #ffc68c
+      padding-right: 5px
+    > span:first-child
+      padding-right: 30px 
+  .pt-17
+    padding-top: 17px
+  .pt-10
+    padding-top: 10px
+.img-responsive
+  width: 100%
+  height: auto
+  &:not(:first-child)
+    box-shadow: 0px 0px 16.34px 2.66px rgba(0, 0, 0, 0.22)
+
+.arrow-up
+  display: block
+  margin-left: auto
+  margin-right: 15px
+  transition: 0.2s
+  &:hover
+    transform: translateY(-10px)
+
+.social
+  display: inline-block
+  vertical-align: middle
+  .social-map
+    display: block
+    background: url(img/sprites-map.png) no-repeat
+    text-indent: 100%
+    white-space: nowrap
+    overflow: hidden
+  .social-tel-top
+    background-position: -99px 0
+    width: 28px
+    height: 24px
+    &:hover
+      background-position: -165px 0
+  .social-vib-top
+    background-position: -123px -50px
+    width: 24px
+    height: 26px
+    &:hover
+      background-position: -158px -51px
+  .social-wa-top
+    background-position: 0 -51px
+    width: 24px
+    height: 24px
+    &:hover
+      background-position: -60px -51px
+  .social-vk-bottom
+    background-position: -200px 0
+    width: 35px
+    height: 21px
+    &:hover
+      background-position: -201px -51px
+  .social-fb-bottom
+    background-position: 0 0
+    width: 13px
+    height: 25px
+    &:hover
+      background-position: -20px 0
+  .social-ins-bottom
+    background-position: -38px 0
+    width: 26px
+    height: 26px
+    &:hover
+      background-position: -69px 0
+  .social-tel-bottom
+    background-position: -132px 0
+    width: 28px
+    height: 24px
+    &:hover
+      background-position: -165px 0
+  .social-vib-bottom
+    background-position: -90px -52px
+    width: 24px
+    height: 26px
+    &:hover
+      background-position: -158px -51px
+  .social-wa-bottom
+    background-position: -29px -51px
+    width: 24px
+    height: 24px
+    &:hover
+      background-position: -60px -51px                 
+.swiper-button-disabled
+  cursor: no-drop
+  outline: none !important
+  .chevron
+    border-color: #afafaf
+
+.popup
+  max-width: 940px
+  min-height: 445px
+  background-color: #fff
+  border-radius: 10px
+  padding: 10px
+  margin: 50px auto
+  background-image: url(img/popup-bg-1.png)
+  background-repeat: no-repeat
+  background-size: cover
+  position: relative
+  .mfp-close
+    color: $accent
+    font-size: 56px
+    opacity: 1
+    top: -61px
+    right: -85px
+    font-weight: 100
+    font-family: 'GothamPro'
+  .popup-inner    
+    background-image: linear-gradient(to right, $accent 50%, transparent 50%),/*
+    */linear-gradient(to right, $accent 50%, transparent 50%),/*
+    */linear-gradient(to bottom, $accent 50%, transparent 50%),/*
+    */linear-gradient(to bottom, $accent 50%, transparent 50%)
+    background-position: left 8px top, left 8px bottom, left top 4px, right top 4px
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y
+    background-size: 16px 1px, 16px 1px, 1px 16px, 1px 16px
+    position: relative
+    border: 1px solid transparent
+    padding: 0
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    padding: 0px 10px
+    padding-bottom: 35px
+    &:after
+      content: ''
+      position: absolute
+      top: -1px
+      left: -1px
+      right: -1px
+      height: 109px
+      background-image: url(img/popup-bg-2.png)
+      background-repeat: no-repeat
+      background-size: cover
+    &:before
+      content: ''
+      position: absolute
+      top: 46%
+      left: 5px
+      right: 5px
+      height: 14px
+      background-image: url(img/popup-bg-3.png)
+      background-repeat: no-repeat
+      background-size: cover
+    .delivery-text
+      text-align: center
+      margin-top: 115px
+      margin-bottom: 82px
+      color: #cc9966
+      font-size: 20px
+      letter-spacing: 1.1px
+      line-height: 1.15
+      b
+        font-size: 22px
+        font-family: 'GothamProBold'
+    form
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      max-width: 510px
+      margin: 0 auto
+      input, textarea
+        padding-left: 18px
+        +placeholder
+          color: #9e9e9e
+      input
+        border-radius: 5px
+        height: 37px
+      textarea
+        width: 100%
+        height: 80px
+        text-align: left
+      input[type="text"]
+        width: 49%
+        text-align: left
+      button[type="submit"]
+        position: absolute
+        bottom: 0px
+        padding: 10px
+        right: 50%
+        transform: translateX(50%) translateY(50%)
+        width: 260px
+#wrapper
+  .shortcode
+    margin-bottom: 40px
+  .wdi_follow_btn
+    @extend .btn-accent
+  .wdi_feed_info
+    margin-bottom: 10px
+  .wdi_header_user_text
+    margin-top: -10px
+    > *
+      margin-top: 10px
+      vertical-align: middle
+    h3
+      color: #292522
+      font-family: 'GothamProBold'
+    .wdi_media_info
+      color: #636363
+@import "media"
